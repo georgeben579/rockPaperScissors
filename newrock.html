@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rock paper scissors</title>
+  <link rel="stylesheet" href="styles/newrock.css">
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="main1">
+      <h1>Rock - Paper - Scissors</h1>
+      <div class="rockPaperScissors">
+        <button onclick="
+          playGame('rock');
+          "><img src="images/rock.png" ></button>
+      <button onclick="
+          playGame('paper');
+          "><img src="images/paper.png"></button>
+      <button class="peace" onclick="
+          playGame('scissors');
+          "><img class="scissors" src="images/scissors.png"></button>
+      </div>
+      <p class="js-result"></p>
+      <p class="js-compareMove"></p>
+      <p class="js-score"></p>
+      <button onclick="
+        score.wins=0;
+        score.losses=0;
+        score.ties=0;
+        localStorage.removeItem('score');
+        resetScoreElement();
+      ">Reset Score</button> 
+  
+    </div>
+  </div> 
+    
+  <script src="scripts/newrock.js"></script>
+</body>
+
+</html>

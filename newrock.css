@@ -1,0 +1,66 @@
+body{
+
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main{
+  width: 100%;
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main1{
+  background-color: rgb(63, 63, 63);
+  padding: 50px;
+  border-radius: 40px;
+
+}
+.rockPaperScissors{
+  display: flex;
+  justify-content: center;
+}
+button{
+  padding: 20px;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  
+}
+button:hover{
+  transform:  scale(1.1);
+}
+
+button img{
+  width: 50px;
+  
+}
+img{
+  width: 50px;
+}
+.peace img{
+  width: 40px;
+}
+.js-result{
+  margin-top: -0px;
+  font-size: 50px;
+  
+}
+.js-compareMove{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  font-size: 20px;
+  margin-top: -60px;
+}
